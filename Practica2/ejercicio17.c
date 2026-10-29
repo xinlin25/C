@@ -5,12 +5,13 @@ int main(void) {
 
     setlocale(LC_ALL,"");
 
-    char entrada[1000];
+    char c;
 
-    while (1) {
-        scanf("%s", &entrada);
-        printf("%s\n", entrada);
+    printf("Introduce cadena Fin= enter + ctrl+z \n");
 
+    while ((c = getchar()) != EOF) {
+        putchar(c);
+        c = getchar();
     }
 
     return 0;
